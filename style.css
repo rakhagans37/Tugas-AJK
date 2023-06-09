@@ -1,0 +1,343 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+    background-color: #526D82;
+}
+/* Css Start Here */
+div.container{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+div.nav{
+    margin-top: 42px;
+    display: flex;
+    flex-direction: row;
+    gap: 76px;
+}
+div.nav a{
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: white;
+    border-bottom: 0px;
+}
+div.nav a:hover{
+  color: #CC333F;
+}
+div.nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #CC333F;
+    transition: width .3s;
+}
+
+div.nav a:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+div.container-header{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/Group\ 14.png);
+}
+div.judul{
+    margin-top: 200px;
+}
+div.judul h1{
+    text-align: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 58px;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: -0.225px;
+    color: white;
+}
+div.judul p{
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 58px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: white;
+}
+div.judul p span{
+    color: #CC333F;
+}
+
+div.container-content{
+    width: 49vw;
+    margin-top: 132px;
+}
+div.profil{
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #E5F0F4;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+div.profil-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 282px;
+}
+div.profil-detail h2{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 46px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.1125px;
+    color: #111210;
+}
+div.profil-detail p{
+    text-align: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4A4A4A;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+div.content{
+    width: 100%;
+}
+div.image1{
+    margin-top: 40px;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 5px solid #9DB2BF;
+    box-sizing: border-box;
+}
+div.image1 img{
+    width: 100%;
+    height: 575px;
+}
+div#pengertian{
+    margin-top: 40px;
+}
+div#pengertian p{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    color: rgb(229, 229, 229);
+}
+.paragraf{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    color: rgb(229, 229, 229);
+}
+h3{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 46px;
+    letter-spacing: -0.175px;
+    color: white;
+}
+div#NIC{
+    margin-top: 40px;
+    width: 100%;
+}
+
+.jenis{
+    width: 92%;
+    margin-left: 3vw;
+}
+
+div#NIC img{
+    width: 100%;
+}
+
+div#NIC strong{
+    color: white;
+}
+
+div.imageNIC{
+    margin-top: 20px;
+    border-radius: 18px;
+    border: 5px solid #9DB2BF;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+div#NIC p.keterangan{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    /* or 200% */
+    
+    text-align: center;
+    
+
+    color: rgb(229, 229, 229);
+}
+div.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 1);
+}
+div.linksosmed{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    height: 40px;
+    margin-top: 40px;
+}
+div.linksosmed img{
+    height: 40px;
+}
+#fungsi{
+    margin-top: 40px;
+}
+#Jenis2{
+    margin-top: 40px;
+}
+
+div#ROUTER{
+    margin-top: 40px;
+}
+
+div#ROUTER img{
+    width: 100%;
+}
+
+div#ROUTER strong{
+    color: white;
+}
+div#ROUTER p.keterangan{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    /* or 200% */
+    
+    text-align: center;
+    
+
+    color: rgb(229, 229, 229);
+}
+.sumber-container{
+    display: flex;
+    flex-direction: column;
+}
+.sumber-container p{
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 14px;
+}
+.sumber-container a{
+    text-align: center;
+    margin-top: 10px;
+}
+
+div.download{
+    width: 30%;
+    height: 50px;
+    background-color: rgba(157, 178, 191, 1);
+    border-radius: 18px;
+    overflow: hidden;
+}
+div.download p{
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+}
+div.download a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
